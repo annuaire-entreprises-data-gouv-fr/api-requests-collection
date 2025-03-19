@@ -1,0 +1,18 @@
+meta {
+  name: Établissements
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://www.api.infogreffe.fr/athena/etablissements/etablissements?id_entreprise=1c13d9b8-470e-4a5f-b274-f43a104414fb&inclure_fermes=true
+  body: none
+  auth: none
+}
+
+params:query {
+  id_entreprise: 1c13d9b8-470e-4a5f-b274-f43a104414fb
+  inclure_fermes: true
+  ~limit: 10
+  ~offset: 0
+}

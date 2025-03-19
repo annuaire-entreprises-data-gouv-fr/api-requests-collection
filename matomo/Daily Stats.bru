@@ -1,0 +1,21 @@
+meta {
+  name: Daily Stats
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://stats.data.gouv.fr/?idSite={{idSite}}&module=API&method=API.get&format=json&period=day&date=2025-01-01,today&token_auth={{token_auth}}
+  body: json
+  auth: none
+}
+
+params:query {
+  idSite: {{idSite}}
+  module: API
+  method: API.get
+  format: json
+  period: day
+  date: 2025-01-01,today
+  token_auth: {{token_auth}}
+}

@@ -1,0 +1,21 @@
+meta {
+  name: Action URLs
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://stats.data.gouv.fr/index.php?module=API&method=Actions.getPageUrls&idSite={{idSite}}&period=day&date=yesterday&format=JSON&token_auth={{token_auth}}
+  body: none
+  auth: none
+}
+
+params:query {
+  module: API
+  method: Actions.getPageUrls
+  idSite: {{idSite}}
+  period: day
+  date: yesterday
+  format: JSON
+  token_auth: {{token_auth}}
+}

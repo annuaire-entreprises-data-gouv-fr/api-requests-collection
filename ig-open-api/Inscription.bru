@@ -1,0 +1,18 @@
+meta {
+  name: Inscription
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://www.api.infogreffe.fr/athena/inscriptions/inscriptions?inclure_radiees=true&id_entreprise=1c13d9b8-470e-4a5f-b274-f43a104414fb
+  body: none
+  auth: none
+}
+
+params:query {
+  inclure_radiees: true
+  id_entreprise: 1c13d9b8-470e-4a5f-b274-f43a104414fb
+  ~limit: 10
+  ~offset: 0
+}

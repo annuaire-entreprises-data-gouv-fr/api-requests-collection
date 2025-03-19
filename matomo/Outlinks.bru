@@ -1,0 +1,23 @@
+meta {
+  name: Outlinks
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://stats.data.gouv.fr/index.php?module=API&method=Actions.getOutlinks&actionType=url&segment=visitorType==returning&format=JSON&token_auth={{token_auth}}&idSite={{idSite}}&period=day&date=2024-12-18
+  body: none
+  auth: none
+}
+
+params:query {
+  module: API
+  method: Actions.getOutlinks
+  actionType: url
+  segment: visitorType==returning
+  format: JSON
+  token_auth: {{token_auth}}
+  idSite: {{idSite}}
+  period: day
+  date: 2024-12-18
+}

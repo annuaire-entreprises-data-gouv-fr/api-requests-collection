@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "IG Open",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

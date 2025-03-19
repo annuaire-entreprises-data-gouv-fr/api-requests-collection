@@ -1,0 +1,24 @@
+meta {
+  name: Recherche géographique
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{baseUrl}}/near_point?lat=46.0513851&long=1.8559426&radius=1
+  body: none
+  auth: none
+}
+
+params:query {
+  lat: 46.0513851
+  long: 1.8559426
+  radius: 1
+  ~activite_principale: 
+  ~section_activite_principale: 
+  ~limite_matching_etablissements: 
+  ~minimal: 
+  ~include: 
+  ~page: 
+  ~per_page: 
+}
