@@ -1,0 +1,19 @@
+meta {
+  name: Actes
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://registre-national-entreprises.inpi.fr/api/companies/951027168/attachments
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{access_token_rne}}
+  Actes.bru
+  Companies.bru
+  Login.bru
+  Single siren.bru
+}

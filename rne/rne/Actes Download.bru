@@ -1,0 +1,20 @@
+meta {
+  name: Actes Download
+  type: http
+  seq: 9
+}
+
+get {
+  url: https://registre-national-entreprises.inpi.fr/api/actes/63df98a28eded29cb31823ee/download
+  body: none
+  auth: bearer
+}
+
+params:query {
+  siren[]: 552032534
+  siren[]: 542051180
+}
+
+auth:bearer {
+  token: 
+}

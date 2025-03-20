@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "RNE",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

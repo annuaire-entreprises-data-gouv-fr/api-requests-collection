@@ -1,0 +1,15 @@
+meta {
+  name: RNA
+  type: http
+  seq: 15
+}
+
+get {
+  url: {{ _.rncs_proxy }}/association/782812606
+  body: none
+  auth: none
+}
+
+headers {
+  X-APIkey: {{ _.api_key }}
+}
