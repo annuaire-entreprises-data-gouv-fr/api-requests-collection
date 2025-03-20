@@ -1,0 +1,15 @@
+meta {
+  name: TVA
+  type: http
+  seq: 14
+}
+
+get {
+  url: {{ _.rncs_proxy }}/tva/27552032534
+  body: none
+  auth: none
+}
+
+headers {
+  X-APIkey: {{ _.api_key }}
+}
