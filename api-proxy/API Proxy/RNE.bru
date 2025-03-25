@@ -1,0 +1,15 @@
+meta {
+  name: RNE
+  type: http
+  seq: 18
+}
+
+get {
+  url: {{ _.rncs_proxy }}/rne/552032534
+  body: none
+  auth: none
+}
+
+headers {
+  X-APIkey: {{ _.api_key }}
+}

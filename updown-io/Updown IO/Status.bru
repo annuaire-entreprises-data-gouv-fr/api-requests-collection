@@ -1,0 +1,21 @@
+meta {
+  name: Status
+  type: http
+  seq: 6
+}
+
+get {
+  url: https://updown.io/api/status_pages
+  body: json
+  auth: none
+}
+
+params:query {
+  : 
+}
+
+headers {
+  Content-Type: application/json
+  User-Agent: mozilla/5.0 (linux; android 6.0.1; nexus 5x build/mmb29p) applewebkit/537.36 (khtml, like gecko) chrome/119.0.6045.105 mobile safari/537.36 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+  Accept-Encoding: gzip
+}

@@ -1,0 +1,23 @@
+meta {
+  name: Companies
+  type: http
+  seq: 7
+}
+
+get {
+  url: https://registre-national-entreprises.inpi.fr/api/companies?page=1&itemsPerPage=1000
+  body: none
+  auth: bearer
+}
+
+params:query {
+  siren[]: 552032534
+}
+
+auth:bearer {
+  token: {{access_token_rne}}
+  Actes.bru
+  Companies.bru
+  Login.bru
+  Single siren.bru
+}

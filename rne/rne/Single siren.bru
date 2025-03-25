@@ -1,0 +1,15 @@
+meta {
+  name: Single siren
+  type: http
+  seq: 6
+}
+
+get {
+  url: https://registre-national-entreprises.inpi.fr/api/companies/892652959
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{access_token_rne}}
+}
