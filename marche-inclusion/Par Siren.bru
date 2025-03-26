@@ -1,0 +1,15 @@
+meta {
+  name: Par Siren
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://lemarche.inclusion.beta.gouv.fr/api/siae/siren/:Siren
+  body: none
+  auth: inherit
+}
+
+params:path {
+  Siren: 200027159
+}
