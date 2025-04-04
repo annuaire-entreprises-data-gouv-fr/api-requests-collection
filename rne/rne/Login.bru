@@ -7,22 +7,17 @@ meta {
 post {
   url: https://registre-national-entreprises.inpi.fr/api/sso/login
   body: json
-  auth: basic
+  auth: none
 }
 
 headers {
   Content-Type: application/json
 }
 
-auth:basic {
-  username: 
-  password: 
-}
-
 body:json {
   {
-    "username": "XXXXX",
-    "password": "XXXXX"
+    "username": "{{username}}",
+    "password": "{{password}}"
   }
 }
 
