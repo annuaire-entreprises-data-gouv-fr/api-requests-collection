@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: https://registre-national-entreprises.inpi.fr/api/companies/892652959
+  url: https://registre-national-entreprises.inpi.fr/api/companies/:siren
   body: none
   auth: bearer
+}
+
+params:path {
+  siren: 821440740
 }
 
 auth:bearer {
