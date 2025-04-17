@@ -1,0 +1,32 @@
+meta {
+  name: Privé Siren
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://api.insee.fr/api-sirene/prive/3.11/siren/:siren
+  body: none
+  auth: oauth2
+}
+
+params:path {
+  siren: 890842198
+}
+
+auth:oauth2 {
+  grant_type: password
+  access_token_url: {{access_token_url}}
+  refresh_token_url: 
+  username: {{username}}
+  password: {{password}}
+  client_id: {{client_id}}
+  client_secret: {{client_secret}}
+  scope: 
+  credentials_placement: body
+  credentials_id: credentials
+  token_placement: header
+  token_header_prefix: Bearer
+  auto_fetch_token: true
+  auto_refresh_token: true
+}
