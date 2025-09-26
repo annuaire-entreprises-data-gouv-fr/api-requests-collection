@@ -8,7 +8,7 @@ Ce dépôt contient les endpoints API de [L'Annuaire des Entreprises](https://an
 ## Usage
 Cloner le dépôt de code :
 ```bash
-git clone git@github.com:datagouv/api-calls.git
+git clone git@github.com:annuaire-entreprises-data-gouv-fr/api-requests-collection.git
 ```
 
 Télécharger et installer :
