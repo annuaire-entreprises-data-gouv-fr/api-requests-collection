@@ -5,12 +5,13 @@ meta {
 }
 
 get {
-  url: {{baseUrl}}/search
+  url: {{baseUrl}}/search?id_finess=010003846
   body: none
   auth: none
 }
 
 params:query {
+  id_finess: 010003846
   ~q: 
   ~activite_principale: 
   ~categorie_entreprise: 
@@ -28,7 +29,7 @@ params:query {
   ~est_entrepreneur_individuel: 
   ~est_entrepreneur_spectacle: 
   ~est_ess: 
-  ~est_finess: 
+  ~est_finess: true
   ~est_organisme_formation: 
   ~est_qualiopi: 
   ~est_rge: 
@@ -38,7 +39,6 @@ params:query {
   ~est_uai: 
   ~etat_administratif: 
   ~id_convention_collective: 
-  ~id_finess: 
   ~id_rge: 
   ~id_uai: 
   ~nature_juridique: 
