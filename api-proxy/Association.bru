@@ -5,11 +5,17 @@ meta {
 }
 
 get {
-  url: {{ _.rncs_proxy }}/association/884762238
+  url: {{rncs_proxy}}/association/:id
   body: none
-  auth: none
+  auth: apikey
 }
 
-headers {
-  X-APIkey: {{ _.api_key }}
+params:path {
+  id: 884762238
+}
+
+auth:apikey {
+  key: X-APIkey
+  value: {{api_key}}
+  placement: header
 }

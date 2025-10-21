@@ -1,0 +1,21 @@
+meta {
+  name: EORI
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{rncs_proxy}}/eori/:id
+  body: none
+  auth: apikey
+}
+
+params:path {
+  id: 27552032534
+}
+
+auth:apikey {
+  key: X-APIkey
+  value: {{api_key}}
+  placement: header
+}
