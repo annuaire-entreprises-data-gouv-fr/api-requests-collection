@@ -1,0 +1,22 @@
+meta {
+  name: Différentielle
+  type: http
+  seq: 8
+}
+
+get {
+  url: https://registre-national-entreprises.inpi.fr/api/companies/diff?from=2025-09-12&to=2025-09-13&pageSize=100
+  body: none
+  auth: bearer
+}
+
+params:query {
+  from: 2025-09-12
+  to: 2025-09-13
+  pageSize: 100
+  ~searchAfter: siren
+}
+
+auth:bearer {
+  token: {{access_token_rne}}
+}

@@ -5,15 +5,15 @@ meta {
 }
 
 get {
-  url: https://registre-national-entreprises.inpi.fr/api/companies/951027168/attachments
+  url: https://registre-national-entreprises.inpi.fr/api/companies/:siren/attachments
   body: none
   auth: bearer
 }
 
+params:path {
+  siren: 951027168
+}
+
 auth:bearer {
   token: {{access_token_rne}}
-  Actes.bru
-  Companies.bru
-  Login.bru
-  Single siren.bru
 }

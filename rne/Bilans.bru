@@ -1,0 +1,19 @@
+meta {
+  name: Bilans
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://registre-national-entreprises.inpi.fr/api/bilans/:id/download
+  body: none
+  auth: bearer
+}
+
+params:path {
+  id: 
+}
+
+auth:bearer {
+  token: {{access_token_rne}}
+}
