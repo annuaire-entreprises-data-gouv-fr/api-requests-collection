@@ -5,16 +5,15 @@ meta {
 }
 
 get {
-  url: https://registre-national-entreprises.inpi.fr/api/actes/63df98a28eded29cb31823ee/download
+  url: https://registre-national-entreprises.inpi.fr/api/actes/:id/download
   body: none
   auth: bearer
 }
 
-params:query {
-  siren[]: 552032534
-  siren[]: 542051180
+params:path {
+  id: 63df98a28eded29cb31823ee
 }
 
 auth:bearer {
-  token: 
+  token: {{access_token_rne}}
 }
